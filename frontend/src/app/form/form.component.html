@@ -1,0 +1,41 @@
+<form class="address-form">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="primeiroInput" class="text-primary">Nome:</label>
+      <input type="text" id="primeiroInput" name="primeiroInput" [(ngModel)]="primeiroInput" class="form-control" placeholder="Primeiro nome...">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="sobrenomeInput" class="text-primary">Sobrenome:</label>
+      <input type="text" id="sobrenomeInput" name="sobrenomeInput" [(ngModel)]="sobrenomeInput" class="form-control" placeholder="Sobrenome...">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-8">
+      <label for="ruaInput" class="text-primary">Endereço:</label>
+      <input type="text" id="ruaInput" name="ruaInput" [(ngModel)]="ruaInput" class="form-control" placeholder="Nome da rua...">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="numeroInput" class="text-primary">Número:</label>
+      <input type="text" id="numeroInput" name="numeroInput" [(ngModel)]="numeroInput" class="form-control" placeholder="Número...">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="bairroInput" class="text-primary">Bairro:</label>
+    <input type="text" id="bairroInput" name="bairroInput" [(ngModel)]="bairroInput" class="form-control" placeholder="Bairro...">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="cidadeInput" class="text-primary">Cidade:</label>
+      <input type="text" id="cidadeInput" name="cidadeInput" [(ngModel)]="cidadeInput" class="form-control" placeholder="Cidade...">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="estadoInput" class="text-primary">Estado:</label>
+      <input type="text" id="estadoInput" name="estadoInput" [(ngModel)]="estadoInput" class="form-control" placeholder="Estado...">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="cepInput" class="text-primary">CEP:</label>
+    <input type="text" id="cepInput" name="cepInput" [(ngModel)]="cepInput" class="form-control" placeholder="CEP...">
+  </div>
+  <button type="submit" class="btn btn-primary" (click) = "enviaEntrada()">Enviar</button>
+</form>

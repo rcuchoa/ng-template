@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Header -->
+<header class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="header-content">
+      <img src="../assets/home-header.png" alt="Home Page Logo" class="header-image" width="60" height="60">
+      <div class="text-center flex-grow-1">
+        <h1>My Template App</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Main App Content -->
+<div class="container py-4">
+  <div class="row">
+    <!-- Form Area -->
+    <div class="col-md-6">
+      <div class="form-box">
+        <app-form (entradaCompletaOutput)="recebeEntrada($event)"></app-form>
+      </div>
+    </div>
+    <!-- Output Area -->
+    <div class="col-md-6">
+      <div class="output-box">
+        <div id="outputText">{{ outputText }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OpenAI Chat Area -->
+<div class="container" style="padding: 10px">
+  <div class="row">
+    <div class="col">
+      <div class="form-box">
+        <app-chat></app-chat>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; 2024 My Template App. All rights reserved.</p>
+  </div>
+</footer>

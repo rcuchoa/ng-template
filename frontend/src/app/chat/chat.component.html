@@ -1,0 +1,8 @@
+<div class="chat-container">
+    <input type="text" class="text-primary" [(ngModel)]="userPrompt" placeholder="Type your prompt here...">
+    <button class="btn btn-primary" (click)="chatModelQuery(userPrompt)">Send</button>
+    <div>
+      <p>Response: {{modelResponse}}</p>
+    </div>
+  </div>
+  
